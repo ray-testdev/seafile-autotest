@@ -1,0 +1,55 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- D:\seafile_autotest\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\seafile_autotest
+configfile: pytest.ini
+testpaths: testcases
+plugins: allure-pytest-2.16.1
+collecting ... collected 43 items
+
+testcases/test_account.py::TestAccount::test_create_account_success PASSED [  2%]
+testcases/test_account.py::TestAccount::test_create_existing_account_returns_200 PASSED [  4%]
+testcases/test_account.py::TestAccount::test_create_account_as_member_forbidden PASSED [  6%]
+testcases/test_account.py::TestAccount::test_get_account_info_success PASSED [  9%]
+testcases/test_account.py::TestAccount::test_get_account_info_invalid_token PASSED [ 11%]
+testcases/test_account.py::TestAccount::test_get_account_info_malformed_token PASSED [ 13%]
+testcases/test_account.py::TestAccount::test_get_account_info_without_token PASSED [ 16%]
+testcases/test_account.py::TestAccount::test_delete_account_success PASSED [ 18%]
+testcases/test_account.py::TestAccount::test_delete_nonexistent_account PASSED [ 20%]
+testcases/test_account.py::TestAccount::test_delete_account_as_member_forbidden PASSED [ 23%]
+testcases/test_auth.py::TestAuth::test_login_success PASSED              [ 25%]
+testcases/test_auth.py::TestAuth::test_login_wrong_password PASSED       [ 27%]
+testcases/test_auth.py::TestAuth::test_login_nonexistent_user PASSED     [ 30%]
+testcases/test_auth.py::TestAuth::test_login_empty_username PASSED       [ 32%]
+testcases/test_auth.py::TestAuth::test_login_empty_password PASSED       [ 34%]
+testcases/test_file.py::TestFile::test_get_upload_link_success PASSED    [ 37%]
+testcases/test_file.py::TestFile::test_upload_file_success PASSED        [ 39%]
+testcases/test_file.py::TestFile::test_upload_to_other_account_repo_forbidden PASSED [ 41%]
+testcases/test_file.py::TestFile::test_get_download_link_success PASSED  [ 44%]
+testcases/test_file.py::TestFile::test_download_file_content_matches PASSED [ 46%]
+testcases/test_file.py::TestFile::test_get_download_link_nonexistent_file PASSED [ 48%]
+testcases/test_file.py::TestFile::test_get_download_link_empty_path PASSED [ 51%]
+testcases/test_file.py::TestFile::test_get_file_info_success PASSED      [ 53%]
+testcases/test_file.py::TestFile::test_get_file_info_nonexistent PASSED  [ 55%]
+testcases/test_file.py::TestFile::test_rename_file_success PASSED        [ 58%]
+testcases/test_file.py::TestFile::test_rename_file_same_name PASSED      [ 60%]
+testcases/test_file.py::TestFile::test_rename_nonexistent_file PASSED    [ 62%]
+testcases/test_file.py::TestFile::test_rename_without_reloaddir_returns_404_but_succeeds PASSED [ 65%]
+testcases/test_file.py::TestFile::test_delete_file_success PASSED        [ 67%]
+testcases/test_file.py::TestFile::test_delete_file_is_idempotent_with_200 PASSED [ 69%]
+testcases/test_repo.py::TestRepo::test_create_repo_success PASSED        [ 72%]
+testcases/test_repo.py::TestRepo::test_create_repo_empty_name PASSED     [ 74%]
+testcases/test_repo.py::TestRepo::test_create_encrypted_repo_success PASSED [ 76%]
+testcases/test_repo.py::TestRepo::test_verify_encrypted_repo_correct_password PASSED [ 79%]
+testcases/test_repo.py::TestRepo::test_verify_encrypted_repo_wrong_password PASSED [ 81%]
+testcases/test_repo.py::TestRepo::test_verify_repo_bad_repo_id PASSED    [ 83%]
+testcases/test_repo.py::TestRepo::test_verify_other_account_repo_forbidden PASSED [ 86%]
+testcases/test_repo.py::TestRepo::test_get_repo_list_contains_created_repo PASSED [ 88%]
+testcases/test_repo.py::TestRepo::test_get_repo_info_success PASSED      [ 90%]
+testcases/test_repo.py::TestRepo::test_get_repo_info_bad_id PASSED       [ 93%]
+testcases/test_repo.py::TestRepo::test_rename_repo_success PASSED        [ 95%]
+testcases/test_repo.py::TestRepo::test_rename_repo_to_empty_name PASSED  [ 97%]
+testcases/test_repo.py::TestRepo::test_delete_repo_success PASSED        [100%]
+
+============================= 43 passed in 3.14s ==============================
+
