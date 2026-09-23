@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Pytest / Allure
+.pytest_cache/
+allure-results/
+allure-report/
+*.log
+
+# 环境配置 —— 含账号密码，绝不提交
+.env
+.env.local
+*.env
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+.DS_Store
